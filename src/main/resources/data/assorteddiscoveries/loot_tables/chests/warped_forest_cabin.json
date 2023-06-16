@@ -13,7 +13,7 @@
       },
       "entries": [
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "minecraft:warped_planks",
           "weight": 9,
           "functions": [
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "minecraft:gold_ingot",
           "weight": 5,
           "functions": [
@@ -41,12 +41,12 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "minecraft:warped_hyphae",
           "weight": 9
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "minecraft:golden_axe",
           "weight": 3,
 		  "functions": [
@@ -61,7 +61,7 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "minecraft:cooked_porkchop",
           "weight": 10,
           "functions": [
@@ -75,12 +75,12 @@
           ]
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "minecraft:warped_stem",
           "weight": 9
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 4
         }

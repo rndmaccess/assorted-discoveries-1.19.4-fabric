@@ -37,14 +37,14 @@ public class ADPieBlock extends Block {
         this.saturationMod = saturationMod;
     }
 
+    @SuppressWarnings("deprecation")
     @Override
-    @SuppressWarnings("depreciated")
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE_BY_BITE[state.get(BITES)];
     }
 
+    @SuppressWarnings("deprecation")
     @Override
-    @SuppressWarnings("depreciated")
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (world.isClient) {
             if (tryEat(world, pos, state, player).isAccepted()) {

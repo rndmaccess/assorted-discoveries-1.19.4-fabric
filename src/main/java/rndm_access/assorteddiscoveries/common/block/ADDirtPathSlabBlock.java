@@ -31,6 +31,7 @@ public class ADDirtPathSlabBlock extends SlabBlock {
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         setToDirtSlab(state, world, pos);
@@ -43,6 +44,7 @@ public class ADDirtPathSlabBlock extends SlabBlock {
         world.setBlockState(pos, pushEntitiesUpBeforeBlockChange(state, dirtSlab, world, pos));
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
         BlockState blockstate = world.getBlockState(pos.up());

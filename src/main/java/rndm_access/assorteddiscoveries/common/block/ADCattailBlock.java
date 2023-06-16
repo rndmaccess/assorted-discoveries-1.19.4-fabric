@@ -39,7 +39,7 @@ public class ADCattailBlock extends TallFlowerBlock {
         return new ItemStack(ADItems.CATTAIL);
     }
 
-    @SuppressWarnings("depreciation")
+    @SuppressWarnings("deprecation")
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.get(HALF) == DoubleBlockHalf.LOWER ? Fluids.WATER.getStill(false)
