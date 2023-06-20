@@ -15,6 +15,8 @@ public class CBiomeTags {
     public static final TagKey<Biome> BLOOD_KELP = of("has_feature/blood_kelp");
     public static final TagKey<Biome> ORE_BAUXITE = of("has_feature/ore_bauxite");
     public static final TagKey<Biome> WEEPING_HEART = of("has_feature/weeping_heart");
+    public static final TagKey<Biome> PATCH_CINDERSNAP_BERRY_BUSH = of("has_feature/patch_cindersnap_berry_bush");
+    public static final TagKey<Biome> PATCH_FROSTBITE_BERRY_BUSH = of("has_feature/patch_frostbite_berry_bush");
 
     private static TagKey<Biome> of(String path) {
         return TagKey.of(RegistryKeys.BIOME, ADReference.makeCommonId(path));

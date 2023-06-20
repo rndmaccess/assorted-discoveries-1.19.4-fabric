@@ -11,6 +11,8 @@ public class CBlockTags {
     public static final TagKey<Block> SNAPDRAGON_PLANTABLE_ON = of("snapdragon_plantable_on");
     public static final TagKey<Block> ENDER_GRASS_PLANTABLE_ON = of("ender_grass_plantable_on");
     public static final TagKey<Block> WEEPING_HEART_PLANTABLE_ON = of("weeping_heart_plantable_on");
+    public static final TagKey<Block> CINDERSNAP_BERRY_BUSH_PLANTABLE_ON = of("cindersnap_berry_bush_plantable_on");
+    public static final TagKey<Block> FROSTBITE_BERRY_BUSH_PLANTABLE_ON = of("frostbite_berry_bush_plantable_on");
     public static final TagKey<Block> DIRT_SLABS = of("dirt_slabs");
     public static final TagKey<Block> SNOW_SLABS = of("snow_slabs");
     public static final TagKey<Block> SNOW_STAIRS = of("snow_stairs");

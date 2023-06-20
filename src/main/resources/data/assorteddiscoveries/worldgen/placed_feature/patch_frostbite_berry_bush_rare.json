@@ -1,0 +1,19 @@
+{
+  "feature": "assorteddiscoveries:patch_frostbite_berry_bush",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 384
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 6
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

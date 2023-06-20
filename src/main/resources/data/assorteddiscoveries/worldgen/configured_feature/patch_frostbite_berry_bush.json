@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:nether_forest_vegetation",
+  "config": {
+    "spread_height": 4,
+    "spread_width": 7,
+    "state_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "assorteddiscoveries:frostbite_berry_bush",
+            "Properties": {
+              "age": "3"
+            }
+          },
+          "weight": 45
+        },
+        {
+          "data": {
+            "Name": "minecraft:warped_roots"
+          },
+          "weight": 54
+        }
+      ]
+    }
+  }
+}

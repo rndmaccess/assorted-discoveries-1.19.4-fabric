@@ -3,10 +3,10 @@ package rndm_access.assorteddiscoveries.common.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
@@ -15,7 +15,7 @@ import rndm_access.assorteddiscoveries.common.core.ADEntityTypeTags;
 import rndm_access.assorteddiscoveries.common.core.ADItems;
 import rndm_access.assorteddiscoveries.common.core.ADParticleTypes;
 
-public class ADWitchsCradleBlock extends ADAbstractBerryBushBlock {
+public class ADWitchsCradleBlock extends ADAbstractThornyBerryBushBlock {
     private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(3.0D, 0.0D, 3.0D, 13.0D,
             9.0D, 13.0D);
     private static final VoxelShape MEDIUM_SHAPE = Block.createCuboidShape(2.0D, 0.0D, 2.0D, 14.0D,
@@ -30,24 +30,13 @@ public class ADWitchsCradleBlock extends ADAbstractBerryBushBlock {
     }
 
     @Override
-    protected Item berryItem() {
-        return ADItems.WITCHS_CRADLE_BRANCH;
+    protected TagKey<EntityType<?>> mobsImmune() {
+        return ADEntityTypeTags.WITCHS_CRADLE_IMMUNE_ENTITY_TYPES;
     }
 
     @Override
-    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (!entity.getType().isIn(ADEntityTypeTags.WITCHS_CRADLE_IMMUNE_ENTITY_TYPES)) {
-            entity.slowMovement(state, new Vec3d(0.8D, 0.75D, 0.8D));
-
-            if (!world.isClient() && state.get(AGE) > 0 && (entity.lastRenderX != entity.getX() || entity.lastRenderZ != entity.getZ())) {
-                double d = Math.abs(entity.getX() - entity.lastRenderX);
-                double e = Math.abs(entity.getZ() - entity.lastRenderZ);
-
-                if (d >= 0.003D || e >= 0.003D) {
-                    entity.damage(world.getDamageSources().sweetBerryBush(), 1.0F);
-                }
-            }
-        }
+    protected Item berryItem() {
+        return ADItems.WITCHS_CRADLE_BRANCH;
     }
 
     @Override

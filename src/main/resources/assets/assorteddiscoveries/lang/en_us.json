@@ -408,6 +408,8 @@
   "block.assorteddiscoveries.black_candle_red_velvet_cake": "Black Candle Red Velvet Cake",
   "block.assorteddiscoveries.blueberry_bush": "Blueberry Bush",
   "block.assorteddiscoveries.camel_plush": "Camel Plush",
+  "block.assorteddiscoveries.cindersnap_berry_bush": "Cindersnap Berry Bush",
+  "block.assorteddiscoveries.frostbite_berry_bush": "Frostbite Berry Bush",
 
   "container.assorteddiscoveries.woodcutter": "Woodcutter",
   
@@ -442,6 +444,8 @@
   "item.assorteddiscoveries.weeping_heart_nectar_bucket": "Weeping Heart Nectar Bucket",
   "item.assorteddiscoveries.weeping_heart_seeds": "Weeping Heart Seeds",
   "item.assorteddiscoveries.hoglin_stew": "Hoglin Stew",
+  "item.assorteddiscoveries.cindersnap_berries": "Cindersnap Berries",
+  "item.assorteddiscoveries.moondew_berries": "Moondew Berries",
   
   "advancements.assorteddiscoveries.story.root.title": "Assorted Discoveries",
   "advancements.assorteddiscoveries.story.root.description": "Start the game with assorted discoveries installed",

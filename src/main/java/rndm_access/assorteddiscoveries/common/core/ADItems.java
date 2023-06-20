@@ -416,6 +416,10 @@ public class ADItems {
             .food(ADFoodComponents.WEEPING_HEART_NECTAR_BUCKET).maxCount(1).recipeRemainder(Items.BUCKET), Items.BUCKET);
     public static final Item WEEPING_HEART_SEEDS = new AliasedBlockItem(ADBlocks.WEEPING_HEART, new Item.Settings());
     public static final Item CAMEL_PLUSH = blockItem(ADBlocks.CAMEL_PLUSH);
+    public static final Item CINDERSNAP_BERRIES = new AliasedBlockItem(ADBlocks.CINDERSNAP_BERRY_BUSH, new Item.Settings()
+            .food(ADFoodComponents.BLUEBERRIES));
+    public static final Item FROSTBITE_BERRIES = new AliasedBlockItem(ADBlocks.FROSTBITE_BERRY_BUSH, new Item.Settings()
+            .food(ADFoodComponents.BLUEBERRIES));
 
     private static Item item() {
         return new Item(new Item.Settings());
@@ -833,6 +837,8 @@ public class ADItems {
         register("weeping_heart_nectar_bucket", WEEPING_HEART_NECTAR_BUCKET);
         register("weeping_heart_seeds", WEEPING_HEART_SEEDS);
         register("camel_plush", CAMEL_PLUSH);
+        register("cindersnap_berries", CINDERSNAP_BERRIES);
+        register("frostbite_berries", FROSTBITE_BERRIES);
 
         AssortedDiscoveries.LOGGER.info("Registered Items");
     }

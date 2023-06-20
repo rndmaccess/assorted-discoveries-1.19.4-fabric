@@ -80,7 +80,17 @@ public class AssortedDiscoveries implements ModInitializer {
 				GenerationStep.Feature.UNDERGROUND_ORES, ADPlacedFeatureKeys.ORE_BAUXITE_UPPER);
 		BiomeModifications.addFeature(BiomeSelectors.tag(CBiomeTags.WEEPING_HEART),
 				GenerationStep.Feature.VEGETAL_DECORATION, ADPlacedFeatureKeys.WEEPING_HEART);
+		BiomeModifications.addFeature(BiomeSelectors.tag(CBiomeTags.PATCH_CINDERSNAP_BERRY_BUSH),
+				GenerationStep.Feature.VEGETAL_DECORATION, ADPlacedFeatureKeys.PATCH_CINDERSNAP_BERRY_BUSH_COMMON);
+		BiomeModifications.addFeature(BiomeSelectors.tag(CBiomeTags.PATCH_CINDERSNAP_BERRY_BUSH),
+				GenerationStep.Feature.VEGETAL_DECORATION, ADPlacedFeatureKeys.PATCH_CINDERSNAP_BERRY_BUSH_RARE);
+		BiomeModifications.addFeature(BiomeSelectors.tag(CBiomeTags.PATCH_FROSTBITE_BERRY_BUSH),
+				GenerationStep.Feature.VEGETAL_DECORATION, ADPlacedFeatureKeys.PATCH_FROSTBITE_BERRY_BUSH_COMMON);
+		BiomeModifications.addFeature(BiomeSelectors.tag(CBiomeTags.PATCH_FROSTBITE_BERRY_BUSH),
+				GenerationStep.Feature.VEGETAL_DECORATION, ADPlacedFeatureKeys.PATCH_FROSTBITE_BERRY_BUSH_RARE);
 	}
+
+
 
 	private static void registerFuel() {
 		FuelRegistry.INSTANCE.add(ADItems.DRIED_BLOOD_KELP_BLOCK, 4000);
@@ -88,6 +98,8 @@ public class AssortedDiscoveries implements ModInitializer {
 
 	private static void registerCompostables() {
 		CompostingChanceRegistry.INSTANCE.add(ADItems.BLUEBERRIES, 0.3F);
+		CompostingChanceRegistry.INSTANCE.add(ADItems.CINDERSNAP_BERRIES, 0.3F);
+		CompostingChanceRegistry.INSTANCE.add(ADItems.FROSTBITE_BERRIES, 0.3F);
 		CompostingChanceRegistry.INSTANCE.add(ADItems.WITCHS_CRADLE_BRANCH, 0.3F);
 		CompostingChanceRegistry.INSTANCE.add(ADItems.BLOOD_KELP_SEED_CLUSTER, 0.3F);
 		CompostingChanceRegistry.INSTANCE.add(ADItems.BLOOD_KELP, 0.3F);
@@ -440,6 +452,8 @@ public class AssortedDiscoveries implements ModInitializer {
 					entries.add(ADItems.GARLIC);
 					entries.add(ADItems.GREEN_ONION);
 					entries.add(ADItems.BLUEBERRIES);
+					entries.add(ADItems.CINDERSNAP_BERRIES);
+					entries.add(ADItems.FROSTBITE_BERRIES);
 					entries.add(ADItems.WITCHS_CRADLE_BRANCH);
 					entries.add(ADItems.BLOOD_KELP_SEED_CLUSTER);
 					entries.add(ADItems.BLOOD_KELP);

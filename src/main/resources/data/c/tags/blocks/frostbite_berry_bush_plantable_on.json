@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:warped_nylium",
+    "minecraft:netherrack",
+    "#assorteddiscoveries:overgrown_netherracks"
+  ]
+}
