@@ -443,6 +443,9 @@
   "item.assorteddiscoveries.hoglin_stew": "Hoglin Stew",
   "item.assorteddiscoveries.cindersnap_berries": "Cindersnap Berries",
   "item.assorteddiscoveries.frostbite_berries": "Frostbite Berries",
+
+  "painting.assorteddiscoveries.starry_night.title": "Starry Night",
+  "painting.assorteddiscoveries.starry_night.author": "rndm_access",
   
   "advancements.assorteddiscoveries.story.root.title": "Assorted Discoveries",
   "advancements.assorteddiscoveries.story.root.description": "Start the game with assorted discoveries installed",
