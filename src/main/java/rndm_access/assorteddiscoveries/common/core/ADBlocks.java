@@ -146,8 +146,6 @@ public class ADBlocks {
     public static final Block QUARTZ_WALL = new WallBlock(AbstractBlock.Settings.copy(Blocks.QUARTZ_BLOCK));
     public static final Block SMOOTH_QUARTZ_WALL = new WallBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_QUARTZ));
     public static final Block STONE_WALL = new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE));
-    public static final Block RED_GLASS = new GlassBlock(AbstractBlock.Settings.copy(Blocks.GLASS));
-    public static final Block RED_GLASS_PANE = new PaneBlock(AbstractBlock.Settings.copy(Blocks.GLASS_PANE));
     public static final Block BLUEBERRY_BUSH = new ADBlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.WHEAT));
     public static final Block BOK_CHOY = new ADBokChoyCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT));
     public static final Block GARLIC = new ADOnionBlock(AbstractBlock.Settings.copy(Blocks.WHEAT), () -> ADItems.GARLIC);
@@ -734,8 +732,6 @@ public class ADBlocks {
         register("quartz_wall", QUARTZ_WALL);
         register("smooth_quartz_wall", SMOOTH_QUARTZ_WALL);
         register("stone_wall", STONE_WALL);
-        register("red_glass", RED_GLASS);
-        register("red_glass_pane", RED_GLASS_PANE);
         register("blueberry_bush", BLUEBERRY_BUSH);
         register("bok_choy", BOK_CHOY);
         register("garlic", GARLIC);

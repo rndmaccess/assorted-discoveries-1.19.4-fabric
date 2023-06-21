@@ -130,8 +130,6 @@ public class ADItems {
     public static final Item QUARTZ_WALL = blockItem(ADBlocks.QUARTZ_WALL);
     public static final Item SMOOTH_QUARTZ_WALL = blockItem(ADBlocks.SMOOTH_QUARTZ_WALL);
     public static final Item STONE_WALL = blockItem(ADBlocks.STONE_WALL);
-    public static final Item RED_GLASS = blockItem(ADBlocks.RED_GLASS);
-    public static final Item RED_GLASS_PANE = blockItem(ADBlocks.RED_GLASS_PANE);
     public static final Item OAK_PLANTER_BOX = blockItem(ADBlocks.OAK_PLANTER_BOX);
     public static final Item SPRUCE_PLANTER_BOX = blockItem(ADBlocks.SPRUCE_PLANTER_BOX);
     public static final Item BIRCH_PLANTER_BOX = blockItem(ADBlocks.BIRCH_PLANTER_BOX);
@@ -565,8 +563,6 @@ public class ADItems {
         register("quartz_wall", QUARTZ_WALL);
         register("smooth_quartz_wall", SMOOTH_QUARTZ_WALL);
         register("stone_wall", STONE_WALL);
-        register("red_glass", RED_GLASS);
-        register("red_glass_pane", RED_GLASS_PANE);
         register("oak_planter_box", OAK_PLANTER_BOX);
         register("spruce_planter_box", SPRUCE_PLANTER_BOX);
         register("birch_planter_box", BIRCH_PLANTER_BOX);

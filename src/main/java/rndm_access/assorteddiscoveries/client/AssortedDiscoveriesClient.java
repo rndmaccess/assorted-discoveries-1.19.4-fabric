@@ -96,7 +96,7 @@ public class AssortedDiscoveriesClient implements ClientModInitializer {
 
     private void registerRenderLayers() {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(),
-                ADBlocks.RED_GLASS, ADBlocks.RED_GLASS_PANE, ADBlocks.OAK_ROPE_LADDER, ADBlocks.SPRUCE_ROPE_LADDER,
+                ADBlocks.OAK_ROPE_LADDER, ADBlocks.SPRUCE_ROPE_LADDER,
                 ADBlocks.BIRCH_ROPE_LADDER, ADBlocks.JUNGLE_ROPE_LADDER, ADBlocks.ACACIA_ROPE_LADDER,
                 ADBlocks.DARK_OAK_ROPE_LADDER, ADBlocks.WARPED_ROPE_LADDER, ADBlocks.CRIMSON_ROPE_LADDER,
                 ADBlocks.IRON_LADDER, ADBlocks.PURPLE_MUSHROOM, ADBlocks.WOODCUTTER, ADBlocks.WHITE_CAMPFIRE,

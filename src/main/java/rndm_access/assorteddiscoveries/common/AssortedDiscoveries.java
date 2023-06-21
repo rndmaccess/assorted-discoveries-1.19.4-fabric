@@ -91,7 +91,6 @@ public class AssortedDiscoveries implements ModInitializer {
 	}
 
 
-
 	private static void registerFuel() {
 		FuelRegistry.INSTANCE.add(ADItems.DRIED_BLOOD_KELP_BLOCK, 4000);
 	}
@@ -425,8 +424,6 @@ public class AssortedDiscoveries implements ModInitializer {
 					entries.add(ADItems.PURPLE_MUSHROOM_BLOCK);
 					entries.add(ADItems.DRIED_BLOOD_KELP_BLOCK);
 					entries.add(ADItems.BLOOD_KELP_LANTERN);
-					entries.add(ADItems.RED_GLASS);
-					entries.add(ADItems.RED_GLASS_PANE);
 					entries.add(ADItems.MAROON_WOOL);
 					entries.add(ADItems.MAROON_CONCRETE);
 					entries.add(ADItems.MAROON_CONCRETE_POWDER);
