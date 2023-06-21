@@ -417,9 +417,9 @@ public class ADItems {
     public static final Item WEEPING_HEART_SEEDS = new AliasedBlockItem(ADBlocks.WEEPING_HEART, new Item.Settings());
     public static final Item CAMEL_PLUSH = blockItem(ADBlocks.CAMEL_PLUSH);
     public static final Item CINDERSNAP_BERRIES = new AliasedBlockItem(ADBlocks.CINDERSNAP_BERRY_BUSH, new Item.Settings()
-            .food(ADFoodComponents.BLUEBERRIES));
+            .food(ADFoodComponents.NETHER_BERRIES));
     public static final Item FROSTBITE_BERRIES = new AliasedBlockItem(ADBlocks.FROSTBITE_BERRY_BUSH, new Item.Settings()
-            .food(ADFoodComponents.BLUEBERRIES));
+            .food(ADFoodComponents.NETHER_BERRIES));
 
     private static Item item() {
         return new Item(new Item.Settings());
