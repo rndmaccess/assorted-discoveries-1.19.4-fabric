@@ -13,14 +13,19 @@ import rndm_access.assorteddiscoveries.common.core.ADEntityTypeTags;
 import rndm_access.assorteddiscoveries.common.core.ADItems;
 import rndm_access.assorteddiscoveries.common.core.CBlockTags;
 
-public class ADCindersnapBerryBushBlock extends ADAbstractThornyBerryBushBlock {
+public class ADCindersnapBerryBushBlock extends ADAbstractBerryBushBlock {
     public ADCindersnapBerryBushBlock(Settings settings) {
         super(settings);
     }
 
     @Override
     protected TagKey<EntityType<?>> mobsImmune() {
-        return ADEntityTypeTags.WITCHS_CRADLE_IMMUNE_ENTITY_TYPES;
+        return ADEntityTypeTags.CINDERSNAP_BERRY_BUSH_IMMUNE_ENTITY_TYPES;
+    }
+
+    @Override
+    protected boolean bushDamages() {
+        return true;
     }
 
     @Override

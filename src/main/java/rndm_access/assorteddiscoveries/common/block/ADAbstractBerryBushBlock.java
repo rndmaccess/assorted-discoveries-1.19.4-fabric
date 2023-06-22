@@ -3,16 +3,20 @@ package rndm_access.assorteddiscoveries.common.block;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SweetBerryBushBlock;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
@@ -22,6 +26,10 @@ public abstract class ADAbstractBerryBushBlock extends SweetBerryBushBlock {
     }
 
     protected abstract Item berryItem();
+
+    protected abstract TagKey<EntityType<?>> mobsImmune();
+
+    protected abstract boolean bushDamages();
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
@@ -44,5 +52,22 @@ public abstract class ADAbstractBerryBushBlock extends SweetBerryBushBlock {
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
         return new ItemStack(this.berryItem());
+    }
+
+    @Override
+    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        if (!entity.getType().isIn(this.mobsImmune())) {
+            entity.slowMovement(state, new Vec3d(0.8D, 0.75D, 0.8D));
+
+            if (this.bushDamages() && !world.isClient() && state.get(AGE) > 0
+                    && (entity.lastRenderX != entity.getX() || entity.lastRenderZ != entity.getZ())) {
+                double d = Math.abs(entity.getX() - entity.lastRenderX);
+                double e = Math.abs(entity.getZ() - entity.lastRenderZ);
+
+                if (d >= 0.003D || e >= 0.003D) {
+                    entity.damage(world.getDamageSources().sweetBerryBush(), 1.0F);
+                }
+            }
+        }
     }
 }

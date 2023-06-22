@@ -15,7 +15,7 @@ import rndm_access.assorteddiscoveries.common.core.ADEntityTypeTags;
 import rndm_access.assorteddiscoveries.common.core.ADItems;
 import rndm_access.assorteddiscoveries.common.core.ADParticleTypes;
 
-public class ADWitchsCradleBlock extends ADAbstractThornyBerryBushBlock {
+public class ADWitchsCradleBlock extends ADAbstractBerryBushBlock {
     private static final VoxelShape SMALL_SHAPE = Block.createCuboidShape(3.0D, 0.0D, 3.0D, 13.0D,
             9.0D, 13.0D);
     private static final VoxelShape MEDIUM_SHAPE = Block.createCuboidShape(2.0D, 0.0D, 2.0D, 14.0D,
@@ -32,6 +32,11 @@ public class ADWitchsCradleBlock extends ADAbstractThornyBerryBushBlock {
     @Override
     protected TagKey<EntityType<?>> mobsImmune() {
         return ADEntityTypeTags.WITCHS_CRADLE_IMMUNE_ENTITY_TYPES;
+    }
+
+    @Override
+    protected boolean bushDamages() {
+        return true;
     }
 
     @Override

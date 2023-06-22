@@ -1,12 +1,9 @@
 package rndm_access.assorteddiscoveries.common.block;
 
 import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.BlockState;
-import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.World;
+import net.minecraft.registry.tag.TagKey;
 import rndm_access.assorteddiscoveries.common.core.ADEntityTypeTags;
 import rndm_access.assorteddiscoveries.common.core.ADItems;
 
@@ -21,9 +18,12 @@ public class ADBlueberryBushBlock extends ADAbstractBerryBushBlock {
     }
 
     @Override
-    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (!entity.getType().isIn(ADEntityTypeTags.BLUEBERRY_BUSH_IMMUNE_ENTITY_TYPES)) {
-            entity.slowMovement(state, new Vec3d(0.8D, 0.75D, 0.8D));
-        }
+    protected TagKey<EntityType<?>> mobsImmune() {
+        return ADEntityTypeTags.BLUEBERRY_BUSH_IMMUNE_ENTITY_TYPES;
+    }
+
+    @Override
+    protected boolean bushDamages() {
+        return false;
     }
 }
